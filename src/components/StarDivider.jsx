@@ -1,6 +1,6 @@
 const StarDivider = () => {
   return (
-    <div className="flex justify-center items-center py-8">
+    <div className="flex justify-center items-center">
       <img 
         src="/storage/star.png" 
         alt="Star divider" 

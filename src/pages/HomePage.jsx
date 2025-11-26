@@ -13,11 +13,11 @@ export default function HomePage() {
       <main className="flex-grow">
         <HeroSection />
         <StarDivider />
+        <ProductCategories />
+        <StarDivider />
         <FeaturedProducts />
         <StarDivider />
         <PromotionalBanner />
-        <StarDivider />
-        <ProductCategories />
       </main>
       <Footer />
     </div>
