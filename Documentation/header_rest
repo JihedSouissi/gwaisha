@@ -1,0 +1,40 @@
+# Header Restructure Plan
+
+## Task Overview
+Restructure the header into two distinct sections:
+1. **Top Section**: Logo centered with icons on the left
+2. **Bottom Section**: Navigation links with hover dropdowns (white background)
+3. **Divider**: Thin line between sections (not full width)
+
+## Implementation Steps
+
+### Step 1: Analyze Current Structure
+- [x] Review current header layout
+- [x] Identify components to move/reorganize
+
+### Step 2: Restructure Header Layout
+- [ ] Create two-section layout within header
+- [ ] Move icons to left side of top section
+- [ ] Keep logo centered in top section
+- [ ] Prepare bottom section for navigation links
+
+### Step 3: Add Navigation Links with Dropdowns
+- [ ] Move navigation links to bottom section
+- [ ] Implement hover dropdown functionality
+- [ ] Style dropdowns with white background
+- [ ] Add dropdown arrow indicators
+
+### Step 4: Add Divider Line
+- [ ] Create thin divider line between sections
+- [ ] Make it not full width (centered)
+- [ ] Style appropriately for both hero and sticky states
+
+### Step 5: Responsive Design
+- [ ] Ensure mobile layout works with new structure
+- [ ] Hide bottom section on mobile (optional)
+- [ ] Maintain existing mobile menu functionality
+
+### Step 6: Test and Polish
+- [ ] Test hover effects on dropdowns
+- [ ] Verify scroll behavior still works
+- [ ] Ensure responsive behavior is correct

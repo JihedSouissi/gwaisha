@@ -1,6 +1,6 @@
 import FeaturedProducts from '../components/FeaturedProducts';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Header from '../components/header/Header.jsx';
 import HeroSection from '../components/HeroSection';
 import ProductCategories from '../components/ProductCategories';
 import PromotionalBanner from '../components/PromotionalBanner';

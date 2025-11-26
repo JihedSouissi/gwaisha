@@ -1,5 +1,5 @@
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Header from '../components/header/Header.jsx';
 import HeroSection from '../components/HeroSection';
 import ProductCarousel from '../components/ProductCarousel';
 
@@ -17,11 +17,11 @@ export default function CategoriesPage() {
 
   const luxuryBracelets = [
     { id: 1, title: "سوار تنس ذهب", price: "500 د.ك", image: "/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png" },
-    { id: 2, title: "سوار ذهب عيار 21", price: "600 د.ك", image: "/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png" },
+    { id: 2, title: "سوار ذهب عيار 21", price: "600 د.ك", image: "/storage/products/dd189eb41bdf06ac5ac5a693165b4d826c99593.png" },
     { id: 3, title: "سوار مرصع بالألماس", price: "750 د.ك", image: "/storage/products/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png" },
     { id: 4, title: "سوار ذهب أبيض", price: "550 د.ك", image: "/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png" },
     { id: 5, title: "سوار تنس ذهب", price: "500 د.ك", image: "/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png" },
-    { id: 6, title: "سوار ذهب عيار 21", price: "600 د.ك", image: "/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png" },
+    { id: 6, title: "سوار ذهب عيار 21", price: "600 د.ك", image: "/storage/products/dd189eb41bdf06ac5ac5a693165b4d826c99593.png" },
     { id: 7, title: "سوار مرصع بالألماس", price: "750 د.ك", image: "/storage/products/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png" },
     { id: 8, title: "سوار ذهب أبيض", price: "550 د.ك", image: "/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png" },
   ];
