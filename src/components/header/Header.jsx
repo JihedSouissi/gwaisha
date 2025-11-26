@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MegaMenu } from './';
@@ -100,7 +101,24 @@ const Header = () => {
               }
             ]
           },
-          { text: 'أساور', href: '/categories/bracelets', products: [] },
+          {
+            text: 'أساور',
+            href: '/categories/bracelets',
+            products: [
+              {
+                name: 'LOVE',
+                description: 'BRACELET',
+                image: '/storage/products/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png',
+                href: '/products/love-bracelet'
+              },
+              {
+                name: 'JUSTE UN CLOU',
+                description: 'BRACELET',
+                image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
+                href: '/products/juste-un-clou-bracelet'
+              }
+            ]
+          },
         ],
         collections: [
           {
@@ -138,7 +156,118 @@ const Header = () => {
     },
     { text: 'المجموعات', href: '#' },
     { text: 'للمجوهرات الراقية', href: '#' },
-    { text: 'هدايا', href: '#' },
+    {
+      text: 'هدايا',
+      href: '/gifts',
+      megaMenu: {
+        secondaryNav: [
+          {
+            text: 'هدايا الزفاف',
+            href: '/gifts/wedding',
+            products: [
+              {
+                name: 'PANTHÈRE DE CARTIER',
+                description: 'RING',
+                image: '/storage/products/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png',
+                href: '/products/panthere-de-cartier-ring'
+              },
+              {
+                name: 'C DE CARTIER',
+                description: 'WEDDING BAND',
+                image: '/storage/products/1253ed2ff53413044568feb3b3253c4903e81187.png',
+                href: '/products/c-de-cartier-wedding-band'
+              }
+            ]
+          },
+          {
+            text: 'هدايا العيد',
+            href: '/gifts/holiday',
+            products: [
+              {
+                name: 'TRINITY',
+                description: 'NECKLACE',
+                image: '/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png',
+                href: '/products/trinity-necklace'
+              },
+              {
+                name: 'CARTIER LOSANGE',
+                description: 'NECKLACE',
+                image: '/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png',
+                href: '/products/cartier-losange-necklace'
+              }
+            ]
+          },
+          {
+            text: 'هدايا الميلاد',
+            href: '/gifts/birthday',
+            products: [
+              {
+                name: 'PANTHÈRE DOUBLE',
+                description: 'RING',
+                image: '/storage/products/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png',
+                href: '/products/panthere-double-ring'
+              },
+              {
+                name: 'PANTHÈRE GRAPHIQUE',
+                description: 'RING',
+                image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
+                href: '/products/panthere-graphique-ring'
+              }
+            ]
+          },
+          {
+            text: 'هدايا خاصة',
+            href: '/gifts/special',
+            products: [
+              {
+                name: 'LOVE',
+                description: 'BRACELET',
+                image: '/storage/products/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png',
+                href: '/products/love-bracelet'
+              },
+              {
+                name: 'JUSTE UN CLOU',
+                description: 'BRACELET',
+                image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
+                href: '/products/juste-un-clou-bracelet'
+              }
+            ]
+          },
+        ],
+        collections: [
+          {
+            title: 'PANTHÈRE DE CARTIER',
+            image: '/storage/products/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png'
+          },
+          {
+            title: 'C DE CARTIER',
+            image: '/storage/products/1253ed2ff53413044568feb3b3253c4903e81187.png'
+          },
+          {
+            title: 'PANTHÈRE DOUBLE',
+            image: '/storage/products/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png'
+          },
+          {
+            title: 'PANTHÈRE GRAPHIQUE',
+            image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png'
+          },
+          {
+            title: 'TRINITY',
+            image: '/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png'
+          },
+          {
+            title: 'CARTIER LOSANGE',
+            image: '/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png'
+          }
+        ],
+        inspiredLinks: [
+          { text: 'WEDDING COLLECTIONS', href: '/gifts/wedding-collections' },
+          { text: 'HOLIDAY DELIGHTS', href: '/gifts/holiday-delights' },
+          { text: 'BIRTHDAY SURPRISES', href: '/gifts/birthday-surprises' },
+          { text: 'LUXURY GIFTS', href: '/gifts/luxury-gifts' }
+        ]
+      }
+    },
     { text: 'عروض حصرية', href: '#' },
     { text: 'أخبارنا', href: '#' },
     { text: 'قصة العلامة', href: '#' },
@@ -154,8 +283,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      setIsScrolled(scrollPosition > windowHeight * 0.8);
+      setIsScrolled(scrollPosition > 20);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -173,16 +301,18 @@ const Header = () => {
     }, 300); // 300ms delay
   };
 
-  // Dynamic classes based on scroll state
-  const headerClasses = isScrolled
-    ? 'fixed bg-white shadow-md w-full z-50 transition-all duration-300 ease-in-out'
-    : 'absolute bg-transparent shadow-none w-full z-20';
+  // Dynamic classes based on scroll state and mega menu state
+  const headerWithMegaMenu = isScrolled || activeMegaMenu;
 
-  const textColorClasses = isScrolled
+  const headerClasses = headerWithMegaMenu
+    ? 'fixed bg-white shadow-md w-full z-50 transition-all duration-300 ease-in-out'
+    : 'fixed bg-transparent shadow-none w-full z-20 transition-all duration-300 ease-in-out';
+
+  const textColorClasses = headerWithMegaMenu
     ? 'text-gray-900 hover:text-primary-red'
     : 'text-white hover:text-primary-red';
 
-  const iconButtonClasses = isScrolled
+  const iconButtonClasses = headerWithMegaMenu
     ? 'text-gray-900 hover:bg-gray-100 bg-transparent p-2 rounded'
     : 'text-white hover:bg-transparent bg-transparent p-2 rounded';
 
@@ -192,7 +322,7 @@ const Header = () => {
       onMouseLeave={handleMouseLeave}
     >
       {/* Top Section: Logo Centered, Icons Left */}
-      <div className="relative flex items-center px-4 py-3">
+      <div className="relative flex items-center px-4 py-3" onMouseEnter={handleMouseLeave}>
         {/* Icons - Left Side */}
         <div className="flex items-center space-x-2 sm:space-x-4 space-x-reverse">
           <button className={iconButtonClasses} aria-label="search">
@@ -214,12 +344,10 @@ const Header = () => {
 
         {/* Logo - Center */}
         <div className="flex-grow flex justify-center absolute left-1/2 transform -translate-x-1/2 z-10">
-          <img 
-            src="/storage/Logo.png" 
-            alt="Logo" 
-            className={`h-6 sm:h-7 md:h-8 transition-all duration-300 ${
-              isScrolled ? 'brightness-100' : 'brightness-0 invert'
-            }`} 
+          <img
+            src={headerWithMegaMenu ? "/storage/Logo_GW-1.png" : "/storage/Logo.png"}
+            alt="Logo"
+            className={`h-6 sm:h-7 md:h-8 transition-all duration-300 ${!headerWithMegaMenu ? 'brightness-0 invert' : ''}`}
           />
         </div>
 
@@ -267,21 +395,30 @@ const Header = () => {
         </div>
       </div>
 
-      {activeMegaMenu && (
-        <>
-          <div 
-            className="absolute top-full left-0 w-full h-2 bg-transparent"
-            onMouseEnter={() => handleMouseEnter(activeMegaMenu)}
-            onMouseLeave={handleMouseLeave}
-          />
-          <MegaMenu 
-            megaMenuData={activeMegaMenu}
-            isOpen={true}
-            onHover={() => handleMouseEnter(activeMegaMenu)}
-            onLeave={handleMouseLeave}
-          />
-        </>
-      )}
+      <AnimatePresence>
+        {activeMegaMenu && (
+          <motion.div
+            key="mega-menu"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-[calc(100%-4px)] left-0 w-full z-40"
+          >
+            <div
+              className="h-1 bg-transparent"
+              onMouseEnter={() => handleMouseEnter(activeMegaMenu)}
+              onMouseLeave={handleMouseLeave}
+            />
+            <MegaMenu
+              megaMenuData={activeMegaMenu}
+              isOpen={true}
+              onHover={() => handleMouseEnter(activeMegaMenu)}
+              onLeave={handleMouseLeave}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (

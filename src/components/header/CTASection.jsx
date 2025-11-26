@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const ArrowLeftIcon = () => (
@@ -8,16 +9,20 @@ const ArrowLeftIcon = () => (
 
 const CTASection = ({ cta, onClose }) => {
   return (
-    <div className="flex justify-center py-4 border-t border-gray-200">
+    <motion.div
+      className="flex justify-center py-4"
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5, duration: 0.3 }}
+    >
       <Link
         to={cta.href}
-        className="inline-flex items-center gap-2 bg-primary-red text-white px-6 py-3 rounded-lg font-medium hover:bg-red-600 transition-colors duration-200"
+        className="inline-flex items-center justify-center border border-black text-black bg-transparent px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200"
         onClick={() => onClose()}
       >
         {cta.text}
-        <ArrowLeftIcon />
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
