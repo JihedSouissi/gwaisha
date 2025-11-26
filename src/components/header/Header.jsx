@@ -60,25 +60,25 @@ const Header = () => {
               {
                 name: 'PANTHÈRE DE CARTIER',
                 description: 'RING',
-                image: '/storage/products/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png',
+                image: '/storage/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png',
                 href: '/products/panthere-de-cartier-ring'
               },
               {
-                name: 'C DE CARTIER',
+                name: 'PANTHÈRE DE CARTIER',
                 description: 'WEDDING BAND',
-                image: '/storage/products/1253ed2ff53413044568feb3b3253c4903e81187.png',
+                image: '/storage/1253ed2ff53413044568feb3b3253c4903e81187.png',
                 href: '/products/c-de-cartier-wedding-band'
               },
               {
                 name: 'PANTHÈRE DOUBLE',
                 description: 'RING',
-                image: '/storage/products/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png',
+                image: '/storage/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png',
                 href: '/products/panthere-double-ring'
               },
               {
                 name: 'PANTHÈRE GRAPHIQUE',
                 description: 'RING',
-                image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
+                image: '/storage/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
                 href: '/products/panthere-graphique-ring'
               }
             ]
@@ -90,13 +90,13 @@ const Header = () => {
               {
                 name: 'TRINITY',
                 description: 'NECKLACE',
-                image: '/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png',
+                image: '/storage/babc1df376cd99a99b42714f7f3c50bc5559cabd.png',
                 href: '/products/trinity-necklace'
               },
               {
                 name: 'CARTIER LOSANGE',
                 description: 'NECKLACE',
-                image: '/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png',
+                image: '/storage/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png',
                 href: '/products/cartier-losange-necklace'
               }
             ]
@@ -108,13 +108,13 @@ const Header = () => {
               {
                 name: 'LOVE',
                 description: 'BRACELET',
-                image: '/storage/products/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png',
+                image: '/storage/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png',
                 href: '/products/love-bracelet'
               },
               {
                 name: 'JUSTE UN CLOU',
                 description: 'BRACELET',
-                image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
+                image: '/storage/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
                 href: '/products/juste-un-clou-bracelet'
               }
             ]
@@ -123,27 +123,27 @@ const Header = () => {
         collections: [
           {
             title: 'PANTHÈRE DE CARTIER',
-            image: '/storage/products/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png'
+            image: '/storage/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png'
           },
           {
             title: 'C DE CARTIER',
-            image: '/storage/products/1253ed2ff53413044568feb3b3253c4903e81187.png'
+            image: '/storage/1253ed2ff53413044568feb3b3253c4903e81187.png'
           },
           {
             title: 'PANTHÈRE DOUBLE',
-            image: '/storage/products/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png'
+            image: '/storage/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png'
           },
           {
             title: 'PANTHÈRE GRAPHIQUE',
-            image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png'
+            image: '/storage/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png'
           },
           {
             title: 'TRINITY',
-            image: '/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png'
+            image: '/storage/babc1df376cd99a99b42714f7f3c50bc5559cabd.png'
           },
           {
             title: 'CARTIER LOSANGE',
-            image: '/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png'
+            image: '/storage/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png'
           }
         ],
         inspiredLinks: [
@@ -154,8 +154,6 @@ const Header = () => {
         ]
       }
     },
-    { text: 'المجموعات', href: '#' },
-    { text: 'للمجوهرات الراقية', href: '#' },
     {
       text: 'هدايا',
       href: '/gifts',
@@ -168,13 +166,13 @@ const Header = () => {
               {
                 name: 'PANTHÈRE DE CARTIER',
                 description: 'RING',
-                image: '/storage/products/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png',
+                image: '/storage/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png',
                 href: '/products/panthere-de-cartier-ring'
               },
               {
                 name: 'C DE CARTIER',
                 description: 'WEDDING BAND',
-                image: '/storage/products/1253ed2ff53413044568feb3b3253c4903e81187.png',
+                image: '/storage/1253ed2ff53413044568feb3b3253c4903e81187.png',
                 href: '/products/c-de-cartier-wedding-band'
               }
             ]
@@ -186,13 +184,13 @@ const Header = () => {
               {
                 name: 'TRINITY',
                 description: 'NECKLACE',
-                image: '/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png',
+                image: '/storage/babc1df376cd99a99b42714f7f3c50bc5559cabd.png',
                 href: '/products/trinity-necklace'
               },
               {
                 name: 'CARTIER LOSANGE',
                 description: 'NECKLACE',
-                image: '/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png',
+                image: '/storage/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png',
                 href: '/products/cartier-losange-necklace'
               }
             ]
@@ -204,13 +202,13 @@ const Header = () => {
               {
                 name: 'PANTHÈRE DOUBLE',
                 description: 'RING',
-                image: '/storage/products/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png',
+                image: '/storage/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png',
                 href: '/products/panthere-double-ring'
               },
               {
                 name: 'PANTHÈRE GRAPHIQUE',
                 description: 'RING',
-                image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
+                image: '/storage/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
                 href: '/products/panthere-graphique-ring'
               }
             ]
@@ -222,13 +220,13 @@ const Header = () => {
               {
                 name: 'LOVE',
                 description: 'BRACELET',
-                image: '/storage/products/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png',
+                image: '/storage/e545cbf7145ac0bd0b2c47eae25c758d4764de40.png',
                 href: '/products/love-bracelet'
               },
               {
                 name: 'JUSTE UN CLOU',
                 description: 'BRACELET',
-                image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
+                image: '/storage/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png',
                 href: '/products/juste-un-clou-bracelet'
               }
             ]
@@ -237,27 +235,27 @@ const Header = () => {
         collections: [
           {
             title: 'PANTHÈRE DE CARTIER',
-            image: '/storage/products/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png'
+            image: '/storage/4a45d666e1ef236972d9ef25ac229e4a1f832e03.png'
           },
           {
             title: 'C DE CARTIER',
-            image: '/storage/products/1253ed2ff53413044568feb3b3253c4903e81187.png'
+            image: '/storage/1253ed2ff53413044568feb3b3253c4903e81187.png'
           },
           {
             title: 'PANTHÈRE DOUBLE',
-            image: '/storage/products/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png'
+            image: '/storage/1264a634bb60a826e5e4fa0c9f7538c2ab3ab27f.png'
           },
           {
             title: 'PANTHÈRE GRAPHIQUE',
-            image: '/storage/products/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png'
+            image: '/storage/a93e25ba794a4a98bfe892a8abff157eceb2d5af.png'
           },
           {
             title: 'TRINITY',
-            image: '/storage/products/babc1df376cd99a99b42714f7f3c50bc5559cabd.png'
+            image: '/storage/babc1df376cd99a99b42714f7f3c50bc5559cabd.png'
           },
           {
             title: 'CARTIER LOSANGE',
-            image: '/storage/products/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png'
+            image: '/storage/dd189ebd41bdf06ac5ac5a693165b4d826c99593.png'
           }
         ],
         inspiredLinks: [
