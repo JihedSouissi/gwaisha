@@ -37,7 +37,7 @@ const ProductCategories = () => {
               style={{ backgroundImage: `url(${category.image})` }}
             >
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300 flex flex-col justify-end items-center p-4 sm:p-6 text-white">
+              <div className="absolute inset-0 bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300 flex flex-col justify-end items-center p-4 sm:p-6 text-white">
                 <h3 className="font-graphik-arabic text-xl sm:text-2xl font-bold mb-2 text-center group-hover:text-primary-red transition-colors duration-300">
                   {category.title}
                 </h3>

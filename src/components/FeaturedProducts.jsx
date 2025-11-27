@@ -31,14 +31,11 @@ const FeaturedProducts = () => {
     <section className="py-8 bg-white-bg text-center mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-graphik-arabic text-3xl sm:text-4xl font-bold mb-2">
-          الأكثر مبيعا
+          استكشف المنتجات المميزة
         </h2>
-        <p className="font-graphik-arabic text-subtext-black mb-6 sm:mb-8 text-sm sm:text-base">
-          اختاري من تشكيلاتنا المتنوعة ما يكمل أناقتك
+        <p className="font-graphik-arabic text-subtext-black mb-2 sm:mb-8 text-base sm:text-base">
+          تصميم لا يضاهى — يجمع بين الأداء الفائق ورضا العملاء في آنٍ واحد.
         </p>
-        <button className="bg-black-bg text-white hover:bg-gray-800 font-graphik-arabic text-sm sm:text-lg px-6 sm:px-8 py-2 sm:py-3 rounded-full mb-8 sm:mb-12 transition-colors">
-          اكتشف الجميع
-        </button>
 
         <ProductCarousel products={products} />
       </div>
